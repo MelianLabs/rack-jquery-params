@@ -1,10 +1,6 @@
-require 'rack'
-
 # Loops through all params and convert the hashes to arrays only if all keys are comprised of integers.
 module Rack
   class JQueryParams
-    include Rack::Utils
-
     HTTP_METHODS = %w(GET PUT POST DELETE HEAD OPTIONS PATCH)
     ALL = 'ALL'
 
